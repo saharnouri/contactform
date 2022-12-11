@@ -1,0 +1,137 @@
+html,body{
+    margin: 0%;
+    padding: 0;
+}
+
+.container{
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    margin-top: 2em;
+}
+
+.lbox{
+    display: grid;
+    padding-inline: 2em;
+    color: #fff;
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 400% 400%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+   
+}
+
+.contactinfo{
+    width: 350px;
+    display: grid;
+    gap: 37px;
+
+}
+ 
+.lbox ::placeholder{
+    color: #fff;
+}
+
+.lbox > div > form > p{
+    color: #fff;
+}
+
+
+.contactinfo > input{
+    border: none;
+    border-bottom: 1px solid white;
+    background: none;
+    outline: none;
+}
+
+.contactinfo > textarea{
+    border: none;
+    color: white;
+    background: none;
+    height: 200px;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+
+.contactinfo > button{
+    width: 110px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(176, 114, 234);
+    padding-block: 15px;
+    border-radius: 7px;
+}
+
+
+.contactinfo > button:focus{
+    cursor: pointer;
+    background-color: rgb(158, 81, 230);
+}
+
+
+.rbox{
+    background-color:rgb(250, 248, 246);
+    padding-inline: 2em;
+   
+}
+
+.rbox > div > h2 > div {
+    height: 2.5px;
+    width: 50px;
+    background-color: rgb(165, 35, 201);
+}
+
+
+.rbox > div > div > i {
+    font-size: 1.7em;
+    padding-top: 0.3em;
+    border: 1px solid rgba(0, 0, 0, 0.279);
+    border-radius: 50%;
+    padding-inline: 0.2em;
+    margin-block: 1.5em;
+}
+
+.rbox > div > div {
+    display: flex;
+    gap: 9px;
+    height: 125px;
+}
+
+.rinfo{
+    margin: 0;
+    margin-block: 1em;
+}
+
+.rtext{
+    margin: 0;
+    margin-block: 1em;
+}
+
+.rbox > div > div > div{
+    margin-block: 2em;
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+@keyframes change {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
